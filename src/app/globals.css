@@ -1,0 +1,128 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+  background: #000;
+}
+
+
+.marquee-container {
+  overflow: hidden;
+  height: 40px;
+  padding-top: 15px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-track.left {
+  display: inline-block;
+  animation: marquee-left 20s linear infinite;
+}
+
+.marquee-track button {
+  text-align: center;
+  width: 200px;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-200px * 7));
+  }
+}
+
+.marquee-container:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(0 0 0), rgba(0 0 0 / 50%), transparent);
+}
+
+.marquee-container:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  /* z-index: 1; */
+  background: linear-gradient(to left, rgba(0 0 0), rgba(0 0 0 / 50%), transparent);
+}
+
+.category-track {
+  padding-right: 100px !important;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 7px;
+  display: flex;
+  gap: 15px;
+  /* white-space: nowrap; */
+}
+
+.category-track::-webkit-scrollbar {
+  height: 15px;
+  background: #000;
+  cursor: pointer;
+}
+
+.category-track::-webkit-scrollbar-thumb {
+  border: 4px solid #000;
+
+  visibility: hidden;
+  border-radius: 50px;
+  background: #1E293B;
+}
+
+.category-track:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.category-track-container {
+  position: relative;
+}
+
+.category-track-container::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 999;
+  background: linear-gradient(to left, rgba(0 0 0), rgba(0 0 0 / 50%), transparent);
+}
+
+.category-card {
+  min-width: 300px;
+  min-height: 90px;
+}
+
+.category-card .card-content {
+  width: 100%;
+  height: 100%;
+}
+#modal{
+  z-index: 9999;
+}
