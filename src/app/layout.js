@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <>
       <html lang="en">
-        <head><link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
+        <head><link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css" />
           <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
           <link rel="icon" href="/img/favicon.png" />
 
