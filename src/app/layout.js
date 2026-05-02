@@ -16,11 +16,11 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <head>
           {/* <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css" /> */}
-          <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css"></link>
-          <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/solid.css"></link>
-          <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/regular.css"></link>
-          <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/light.css"></link>
-          <link defer="" media="all" onload="this.media='all'" rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/brands.css"></link>
+          <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css"></link>
+          <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/solid.css"></link>
+          <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/regular.css"></link>
+          <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/light.css"></link>
+          <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.2.0/css/brands.css"></link>
           <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
           <link rel="icon" href="/img/favicon.png" />
 
